@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.import">
+		<item key="project_location" value="C:\GitHub2\projeto-usuario-API"/>
+	</section>
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item key="use_default_location" value="false"/>
+		<item key="project_location" value="C:\GitHub2\projeto-usuario-API"/>
+		<item key="custom_location" value="C:\GitHub2\projeto-usuario-API"/>
+	</section>
+</section>
