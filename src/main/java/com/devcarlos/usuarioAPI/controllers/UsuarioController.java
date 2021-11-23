@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/usuarios")
 public class UsuarioController {
 
+    // NESSE EXEMPLO ESTOU USANDO O TIPO "STRING" PARA RETORNAR A PAGINA.
    @GetMapping("/")
     public String listarUsuarios(){
         return "usuarios_listar";
