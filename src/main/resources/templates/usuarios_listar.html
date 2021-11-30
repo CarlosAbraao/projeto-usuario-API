@@ -49,6 +49,7 @@
             <tr th:each="usuario: ${listadeusuarios}">
                 <th scope="row" th:text="${usuario.id}"></th>
                 <td th:text="${usuario.nome}"></td>
+                <td th:text="${usuario.email}"></td>
                 <td th:text="${usuario.idade}"></td>
 
                 <td >

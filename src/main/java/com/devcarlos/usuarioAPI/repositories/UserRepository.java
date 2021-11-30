@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 public interface UserRepository extends JpaRepository<UsuarioEntity, Long> {
 
     UsuarioEntity findUsuarioEntityById(Long id);
-	
 
 
+    UsuarioEntity findByEmail(String email);
 }

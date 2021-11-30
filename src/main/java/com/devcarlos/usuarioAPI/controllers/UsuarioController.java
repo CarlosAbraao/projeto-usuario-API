@@ -60,11 +60,19 @@ public class UsuarioController {
 
  // ATRAVES DO POST EU VOU ENVIAR AS INFORMAÇÕES VINDAS DOS FORMS NA PAGINA ADD_USUARIO
     @PostMapping("/add")
-    public String AddUsuario(UsuarioEntity usuarioEntity){
+    public ModelAndView AddUsuario(UsuarioEntity usuarioEntity){
+        if (usuarioService.save(usuarioEntity)){
+            return listarUsuario();
+        }
+        ModelAndView modelAndView = new ModelAndView("usuarios_add");
+        modelAndView.addObject("msgErroEmail","Usuario ou email ja existe" +
+                "");
+        return modelAndView;
 
-       usuarioService.save(usuarioEntity);
 
-       return "redirect:/usuarios/";
+
+
+
     }
 
 
